@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_StudentAccount">
+   <children>
+      <AnchorPane prefHeight="399.0" prefWidth="553.0">
+         <children>
+            <Label fx:id="welcome" layoutX="39.0" layoutY="22.0" prefHeight="40.0" prefWidth="157.0" text="WELCOME">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="studentNumber" alignment="CENTER" layoutX="377.0" layoutY="22.0" prefHeight="30.0" prefWidth="157.0" text="Student Number">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableAdmin" layoutX="27.0" layoutY="74.0" prefHeight="222.0" prefWidth="507.0">
+              <columns>
+                <TableColumn fx:id="courseNumberCol" prefWidth="99.0" text="Course Number" />
+                <TableColumn fx:id="courseNameCol" prefWidth="190.0" text="Course Name" />
+                  <TableColumn fx:id="courseTeacherCol" prefWidth="119.0" text="Teacher" />
+                  <TableColumn fx:id="courseGradeCol" prefWidth="98.0" text="Grade" />
+              </columns>
+            </TableView>
+            <Button layoutX="45.0" layoutY="336.0" mnemonicParsing="false" onAction="#returnBack" prefHeight="40.0" prefWidth="120.0" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="GPA" alignment="CENTER" layoutX="372.0" layoutY="336.0" prefHeight="40.0" prefWidth="168.0" text="CURRENT GPA">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="217.0" layoutY="336.0" mnemonicParsing="false" onAction="#goToAddClass" prefHeight="40.0" prefWidth="120.0" text="Class Sign Up">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

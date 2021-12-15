@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_viewAdmin">
+   <children>
+      <AnchorPane prefHeight="503.0" prefWidth="663.0">
+         <children>
+            <Label layoutX="208.0" layoutY="33.0" text="View Admin Accounts">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableAdmin" layoutX="214.0" layoutY="88.0" prefHeight="386.0" prefWidth="420.0">
+              <columns>
+                <TableColumn fx:id="numberCol" prefWidth="92.0" text="number" />
+                <TableColumn fx:id="userNameCol" prefWidth="169.0" text="userName" />
+                  <TableColumn fx:id="passwordCol" prefWidth="158.0" text="password" />
+              </columns>
+            </TableView>
+            <Label layoutX="33.0" layoutY="88.0" prefHeight="17.0" prefWidth="145.0" text="Admin Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="31.0" layoutY="108.0" />
+            <Label layoutX="32.0" layoutY="141.0" prefHeight="17.0" prefWidth="145.0" text="Admin UserName:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="30.0" layoutY="161.0" />
+            <Label layoutX="32.0" layoutY="197.0" prefHeight="17.0" prefWidth="145.0" text="Admin Password:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="30.0" layoutY="217.0" />
+            <CheckBox layoutX="30.0" layoutY="258.0" mnemonicParsing="false" text="Delete User">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="48.0" layoutY="368.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Update">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="48.0" layoutY="419.0" mnemonicParsing="false" onAction="#returnBack" prefHeight="35.0" prefWidth="101.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

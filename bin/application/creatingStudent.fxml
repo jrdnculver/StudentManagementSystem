@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_creatingStudent">
+   <children>
+      <AnchorPane prefHeight="388.0" prefWidth="567.0">
+         <children>
+            <Label alignment="CENTER" layoutX="209.0" layoutY="22.0" text="Create Student">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="75.0" text="First Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="109.0" text="Last Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameTxt" layoutX="128.0" layoutY="73.0" />
+            <TextField fx:id="lastNameTxt" layoutX="128.0" layoutY="107.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="144.0" prefHeight="20.0" prefWidth="73.0" text="Street:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roadTxt" layoutX="128.0" layoutY="142.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="179.0" prefHeight="20.0" prefWidth="73.0" text="City:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cityTxt" layoutX="128.0" layoutY="177.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="214.0" prefHeight="20.0" prefWidth="73.0" text="State:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="248.0" prefHeight="20.0" prefWidth="73.0" text="Zip:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="zipTxt" layoutX="128.0" layoutY="246.0" />
+            <CheckBox fx:id="isAdminChk" layoutX="377.0" layoutY="88.0" mnemonicParsing="false" text="Admin">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="isTeacherChk" layoutX="377.0" layoutY="111.0" mnemonicParsing="false" text="Teacher">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="isStudentChk" layoutX="377.0" layoutY="135.0" mnemonicParsing="false" text="Student">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="215.0" prefHeight="20.0" prefWidth="73.0" text="UserName:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameTxt" layoutX="377.0" layoutY="213.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="247.0" prefHeight="20.0" prefWidth="73.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordTxt" layoutX="377.0" layoutY="245.0" />
+            <Label fx:id="displayStatusLbl" alignment="CENTER" layoutX="41.0" layoutY="285.0" prefHeight="17.0" prefWidth="479.0" text="Create New Student">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="stateCmb" layoutX="128.0" layoutY="212.0" prefWidth="150.0" />
+            <Button layoutX="260.0" layoutY="323.0" mnemonicParsing="false" onAction="#returnBack" prefHeight="40.0" prefWidth="120.0" text="Return">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#createStudent" prefHeight="40.0" prefWidth="120.0" text="Create Student">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

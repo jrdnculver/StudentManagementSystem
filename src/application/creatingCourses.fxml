@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_creatingCourses">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-7.0" prefHeight="465.0" prefWidth="602.0">
+         <children>
+            <Label layoutX="223.0" layoutY="25.0" text="Create Course">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="74.0" prefHeight="20.0" prefWidth="123.0" text="Course Number:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="courseNumberTxt" layoutX="145.0" layoutY="72.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="110.0" prefHeight="20.0" prefWidth="123.0" text="Course Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="courseNameTxt" layoutX="145.0" layoutY="108.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="304.0" layoutY="110.0" prefHeight="20.0" prefWidth="123.0" text="Course Teacher:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="185.0" prefHeight="20.0" prefWidth="123.0" text="Start Date:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="74.0" prefHeight="20.0" prefWidth="123.0" text="Course Capacity:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="courseCapacityTxt" layoutX="434.0" layoutY="72.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="247.0" prefHeight="20.0" prefWidth="142.0" text="Course Description:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="courseDescriptionTxt" layoutX="164.0" layoutY="243.0" prefHeight="128.0" prefWidth="406.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="185.0" prefHeight="20.0" prefWidth="123.0" text="End Date:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="301.0" layoutY="149.0" prefHeight="20.0" prefWidth="123.0" text="Credits:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="courseCreditsCmb" layoutX="434.0" layoutY="147.0" prefWidth="150.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="149.0" prefHeight="20.0" prefWidth="123.0" text="Course Subject:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="courseSubjectCmb" layoutX="145.0" layoutY="147.0" prefWidth="150.0" />
+            <Button layoutX="303.0" layoutY="412.0" mnemonicParsing="false" onAction="#returnBack" prefHeight="40.0" prefWidth="120.0" text="Return">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="447.0" layoutY="412.0" mnemonicParsing="false" onAction="#createCourse" prefHeight="40.0" prefWidth="120.0" text="Create Course">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="courseStartDateMonthCmb" layoutX="145.0" layoutY="183.0" prefHeight="25.0" prefWidth="79.0" />
+            <ComboBox fx:id="courseStartDateDayCmb" layoutX="221.0" layoutY="183.0" prefHeight="25.0" prefWidth="73.0" />
+            <ComboBox fx:id="courseStartDateYearCmb" layoutX="145.0" layoutY="208.0" prefHeight="25.0" prefWidth="149.0" />
+            <ComboBox fx:id="courseEndDateMonthCmb" layoutX="434.0" layoutY="180.0" prefHeight="25.0" prefWidth="73.0" />
+            <ComboBox fx:id="courseEndDateDayCmb" layoutX="504.0" layoutY="180.0" prefHeight="25.0" prefWidth="79.0" />
+            <ComboBox fx:id="courseEndDateYearCmb" layoutX="434.0" layoutY="205.0" prefHeight="25.0" prefWidth="149.0" />
+            <ComboBox fx:id="courseTeacherCmb" layoutX="434.0" layoutY="108.0" prefWidth="150.0" />
+            <Label fx:id="displayStatusLbl" alignment="CENTER" layoutX="13.0" layoutY="380.0" prefHeight="17.0" prefWidth="579.0" text="Create New Course">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
